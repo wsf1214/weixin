@@ -1,0 +1,48 @@
+<view class="top" animation="{{animationData}}">
+	<view class="list {{index=='0'?'active':''}}" bindtap="changeList" data-index="0" >
+		<image src="../../image/nine1.png"></image>
+		全部
+	</view>
+	<view class="list {{index=='1'?'active':''}}" bindtap="changeList" data-index="1">
+		<image src="../../image/nine2.png"></image>
+		女装
+	</view>
+	<view class="list {{index=='2'?'active':''}}" bindtap="changeList" data-index="2">
+		<image src="../../image/nine3.png"></image>
+		男装
+	</view>
+	<view class="list {{index=='3'?'active':''}}" bindtap="changeList" data-index="3">
+		<image src="../../image/nine4.png"></image>
+		母婴
+	</view>
+	<view class="list" bindtap="toggle">
+		<image src="{{moreImg}}"></image>
+		{{moreText}}
+	</view>
+	<view class="list {{index=='4'?'active':''}}" bindtap="changeList" data-index="4">
+		<image src="../../image/nine5.png"></image>
+		鞋包
+	</view>
+	<view class="list {{index=='5'?'active':''}}" bindtap="changeList" data-index="5">
+		<image src="../../image/nine6.png"></image>
+		家居
+	</view>
+	<view class="list {{index=='6'?'active':''}}" bindtap="changeList" data-index="6">
+		<image src="../../image/nine7.png"></image>
+		美食
+	</view>
+</view>
+<view class="nineLists">
+	<view class="nineList" wx:for="{{nineList}}" wx:key="{{index}}" bindtap="goDetail" data-goods="{{item}}">
+		<image class="goodsImg" src="{{item.img}}"></image>
+		<p class="goodsName">{{item.name}}</p>
+		<view class="goodsInfo">
+			<p class="price">
+				￥{{item.price}}
+			</p>
+			<p class="buynum">
+				{{item.buynum}} 人已买
+			</p>
+		</view>
+	</view>
+</view>

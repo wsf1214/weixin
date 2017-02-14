@@ -1,0 +1,58 @@
+<view class="main">
+	<view class="top">
+		<view class="img">
+			<image src="{{goods.img}}"></image>
+		</view>
+		<view class="info">
+			<view class="name">
+				{{goods.name}}
+			</view>
+			<view class="price">
+				￥{{goods.price}}
+				<span>￥{{goods.bPrice}}.0</span>
+				<i>{{goods.discount}}折</i>
+			</view>
+			<view class="buynum">
+				已有{{goods.buynum}}人购买
+			</view>
+		</view>
+	</view>
+	<view class="tip">
+		小贴士
+	</view>
+	<view class="middle">
+		<image src="../../image/11.jpg"></image>
+		<image src="../../image/22.jpg"></image>
+		<image src="../../image/33.jpg"></image>
+		<image src="../../image/44.jpg"></image>
+		<image src="../../image/55.jpg"></image>
+		<image src="../../image/66.jpg"></image>
+		<image src="../../image/77.jpg"></image>
+		<image src="../../image/88.jpg"></image>
+		<image src="../../image/99.jpg"></image>
+	</view>
+	
+</view>
+
+<view class="bootom">
+	<view class="left">
+		<view>
+			<image src="../../image/detail1.png"></image>
+			客服
+		</view>
+		<view>
+			<image src="../../image/detail2.png"></image>
+			店铺
+		</view>
+		<view>
+			<image src="../../image/detail3.png"></image>
+			收藏
+		</view>
+	</view>
+	<view class="right">
+		<view bindtap="addCart">加入购物车</view>
+		<view>立即购买</view>
+	</view>
+</view>	
+	
+

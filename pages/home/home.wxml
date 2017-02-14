@@ -1,0 +1,69 @@
+<view class="banner">
+	<swiper indicator-dots="true" autoplay="true" interval="5000" circular="true">
+	    <swiper-item>
+	      <image src="http://m.1zw.com/themes/1zw/assets/images/wap/wap002.jpg"/>
+	    </swiper-item>
+		<swiper-item>
+	      <image src="http://m.1zw.com/themes/1zw/assets/images/wap/wap-banner.jpg"/>
+	    </swiper-item>
+	    <swiper-item>
+	      <image src="http://i.okaybuy.cn/images/multipic/new/201612/4e/4e4b4b06c2e53109fdb751c7507858a6.jpg"/>
+	    </swiper-item>
+	    <swiper-item>
+	      <image src="http://i.okaybuy.cn/images/multipic/new/201612/db/db0e32bca62325bfaef21464f161a241.jpg"/>
+	    </swiper-item>
+	    <swiper-item>
+	      <image src="http://i.okaybuy.cn/images/multipic/new/201612/c2/c29d382bc6a183c72b08f3b42dcc4f23.jpg"/>
+	    </swiper-item>
+	</swiper>
+</view>
+<view class="bannerBottom">
+	<view>
+		<image src="../../image/top_ten.png"></image>
+		TOP10
+	</view>
+	<view>
+		<image src="../../image/youpinhui.png"></image>
+		优品汇
+	</view>
+	<view>
+		<image src="../../image/taoyoupin.png"></image>
+		淘优品
+	</view>
+	<view>
+		<image src="../../image/guanghaohuo.png"></image>
+		逛好货
+	</view>
+</view>
+<view class="pics">
+	<image src="../../image/pic1.png" class="pic1"></image>
+	<image src="../../image/pic2.png" class="pic2"></image>
+	<image src="../../image/pic3.png" class="pic3"></image>
+</view>
+<view class="tips">
+	每日优选
+</view>
+<view class="proList">
+	<view class="proItem" wx:for="{{homeList}}" wx:key="{{index}}"  bindtap="goDetail" data-goods="{{item}}">
+		<image src="{{item.img}}" class="proImg"></image>
+		<view class="proDetail">
+			<view class="proName">
+				<view>{{item.name}}</view>
+			</view>
+			<view class="proInfo">
+				<span class="sPrice">
+					￥{{item.price}}<span>.00</span>
+				</span>
+				<span class="bPrice">
+					￥{{item.discount=="0"?item.price:item.price*10/item.discount-item.price*10/item.discount%1}}.00
+				</span> |  
+				<span class="discount">
+					 {{item.discount}}折
+				</span>
+			</view>
+			<view class="proNum">
+				已售<span>{{item.buynum}}</span>件
+			</view>
+		</view>
+	</view>
+</view>

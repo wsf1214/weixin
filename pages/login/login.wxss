@@ -1,0 +1,19 @@
+page {
+  background: lightgrey;
+  padding-top: 40rpx; }
+  page .inputs {
+    display: flex;
+    align-items: center;
+    padding-left: 30rpx;
+    margin: 2rpx 20rpx;
+    background: #fff;
+    height: 100rpx;
+    border-radius: 5rpx; }
+  page .login {
+    margin: 40rpx 20rpx;
+    color: #fff;
+    background: orange; }
+  page .toRegister {
+    margin-left: 25rpx;
+    color: #fff;
+    font-size: 30rpx; }

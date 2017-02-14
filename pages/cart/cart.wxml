@@ -1,0 +1,45 @@
+<view class="empty" wx:if="{{!haveCart}}">
+	<view class="main">
+		暂无商品或未登录
+	</view>
+	<button bindtap="goHome">去逛逛</button>
+</view>
+<view class="have" wx:else="{{haveCart}}">
+	<view class="main">
+		<view class="list" wx:for="{{cartList}}" wx:key="{{index}}">
+			<view class="img" >
+				<image src="{{item.img}}"></image>
+			</view>
+			
+			<view class='right'>
+				<view class="name">
+					{{item.name}}
+				</view>
+				<view class="price">
+					<span>
+						￥{{item.price}}
+					</span>
+					<span>
+						总价:￥{{item.num*item.price-item.num*item.price%1}}
+					</span>
+				</view>
+				<view class="num">
+					<span bindtap="reduce" data-goods="{{item}}" data-index="{{index}}">-</span>
+					<span>{{item.num}}</span>
+					<span bindtap="add" data-goods="{{item}}" data-index="{{index}}">+</span>
+				</view>
+				<view class="dete" data-goods="{{item}}" data-index="{{index}}" bindtap="dete">
+					删除
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="bottom">
+		<view>
+			总价:{{allPrice}}
+		</view>
+		<view bindtap="toPay">
+			结算
+		</view>
+	</view>
+</view>

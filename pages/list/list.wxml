@@ -1,0 +1,14 @@
+<view class="nineLists">
+	<view class="nineList" wx:for="{{list}}" wx:key="{{index}}" bindtap="goDetail" data-goods="{{item}}">
+		<image class="goodsImg" src="{{item.img}}"></image>
+		<p class="goodsName">{{item.name}}</p>
+		<view class="goodsInfo">
+			<p class="price">
+				￥<span>{{item.price}}</span>.00
+			</p>
+			<p class="buynum">
+				{{item.buynum}}人已买
+			</p>
+		</view>
+	</view>			
+</view>

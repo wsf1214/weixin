@@ -1,0 +1,53 @@
+{
+  "pages":[
+  "pages/kind/kind",  
+  "pages/cart/cart", 
+	  "pages/home/home",
+	  "pages/order/order",
+	  "pages/user/user",
+	  "pages/login/login",
+	  "pages/register/register",  
+	  "pages/nine/nine",
+	     
+	  "pages/list/list",
+	  "pages/detail/detail",
+	  "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#f66",
+    "navigationBarTitleText": "1折买",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "backgroundColor": "#000",
+    "borderStyle": "#eee",
+    "selectedColor": "#f4ea2a",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/homeing.png"
+    },{
+      "pagePath": "pages/kind/kind",
+      "text": "类目",
+      "iconPath": "image/kind.png",
+      "selectedIconPath": "image/kinding.png"
+    },{
+      "pagePath":"pages/nine/nine",
+      "text": "9.9包邮",
+       "iconPath": "image/nine.png",
+      "selectedIconPath": "image/nineing.png"
+    },{
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
+       "iconPath": "image/cart.png",
+      "selectedIconPath": "image/carting.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "我的",
+       "iconPath": "image/user.png",
+      "selectedIconPath": "image/usering.png"
+    }]
+  }
+}

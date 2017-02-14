@@ -1,0 +1,27 @@
+page {
+  background: #eee; }
+
+.kindLists {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5rpx; }
+  .kindLists .kindList {
+    width: 31%;
+    background: #fff;
+    height: 275rpx;
+    margin: 1.1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .kindLists .kindList image {
+      width: 90%;
+      height: 225rpx; }
+    .kindLists .kindList span {
+      height: 50rpx;
+      line-height: 50rpx;
+      margin: 15rpx 0; }
+
+/*# sourceMappingURL=kind.css.map */

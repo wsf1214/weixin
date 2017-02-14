@@ -1,0 +1,11 @@
+<view class="inputs">
+	<input text placeholder="请输入用户名" bindinput="inputUserID"/>
+</view>
+<view class="inputs">
+	<input password placeholder="请输入密码" bindinput="inputPass1"/>
+</view>
+<view class="inputs">
+	<input password placeholder="请再次输入密码" bindinput="inputPass2"/>
+</view>
+<button class="login" bindtap="register">注　册</button>
+<view class="toRegister" bindtap="goLogin">登录</view>

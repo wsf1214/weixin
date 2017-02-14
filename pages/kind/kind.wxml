@@ -1,0 +1,34 @@
+<view class="kindLists">
+	<view class="kindList" bindtap="goList" data-list="0">
+		<image src="../../image/kind3.jpg"></image>
+		<span>运动户外</span>
+	</view>
+	<view class="kindList" bindtap="goList" data-list="1">
+		<image src="../../image/kind5.png"></image>
+		<span>精品女装</span>
+	</view>
+	<view class="kindList" bindtap="goList" data-list="2">
+		<image src="../../image/kind4.jpg"></image>
+		<span>休闲服装</span>
+	</view>
+	<view class="kindList" bindtap="goList" data-list="3">
+		<image src="../../image/kind2.jpg"></image>
+		<span>精品男鞋</span>
+	</view>
+	<view class="kindList" bindtap="goList" data-list="4">
+		<image src="../../image/kind1.jpg"></image>
+		<span>精品女鞋</span>
+	</view>
+	<view class="kindList" bindtap="goList" data-list="5">
+		<image src="../../image/kind9.png"></image>
+		<span>快乐儿童</span>
+	</view>
+	<view class="kindList" bindtap="goList" data-list="6">
+		<image src="../../image/kind8.png"></image>
+		<span>精品男装</span>
+	</view>	
+	<view class="kindList" bindtap="goList" data-list="7">
+		<image src="../../image/kind7.png"></image>
+		<span>家居服饰</span>
+	</view>
+</view>
